@@ -1,1 +1,22 @@
-{}
+{
+  "articles": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      },
+      "content": {
+        "appearance": ""
+      }
+    }
+  },
+  "article": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      },
+      "content": {
+        "appearance": ""
+      }
+    }
+  }
+}

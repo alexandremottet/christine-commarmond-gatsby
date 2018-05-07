@@ -38,6 +38,11 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "articles": {
+      "collection": "article",
+      "dominant": true,
+      "via": "author"
     }
   }
 }

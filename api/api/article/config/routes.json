@@ -2,40 +2,40 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/users",
-      "handler": "Users.find",
+      "path": "/article",
+      "handler": "Article.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/users/:_id",
-      "handler": "Users.findOne",
+      "path": "/article/:_id",
+      "handler": "Article.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/users",
-      "handler": "Users.create",
+      "path": "/article",
+      "handler": "Article.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/users/:_id",
-      "handler": "Users.update",
+      "path": "/article/:_id",
+      "handler": "Article.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/users/:_id",
-      "handler": "Users.destroy",
+      "path": "/article/:_id",
+      "handler": "Article.destroy",
       "config": {
         "policies": []
       }
