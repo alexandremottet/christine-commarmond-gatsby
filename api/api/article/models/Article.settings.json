@@ -9,16 +9,16 @@
     "timestamps": true
   },
   "attributes": {
-    "author": {
-      "model": "user",
-      "via": "articles",
-      "plugin": "users-permissions"
-    },
     "title": {
       "type": "string"
     },
     "content": {
       "type": "text"
+    },
+    "author": {
+      "model": "user",
+      "via": "articles",
+      "plugin": "users-permissions"
     }
   }
 }
