@@ -1,0 +1,10 @@
+.ui.menu {
+  border-radius: 0 !important;
+  border: 0 !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  height: 50px;
+}
+
+.ui.menu > .item {
+  color: #ffffff !important;
+}
