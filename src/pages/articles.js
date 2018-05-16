@@ -1,19 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import './articles.css'
+
 const SecondPage = ({ data }) => (
-  <div style={{paddingTop: '50px'}}>
-    <ul>
-      {data.allStrapiArticle.edges.map(document => (
-        <li key={document.node.id}>
-          <h2>
-            <Link to={`/${document.node.id}`}>{document.node.title}</Link>
-          </h2>
-          <p>{document.node.content}</p>
-        </li>
-      ))}
-    </ul>
-  </div>
+    <div className="ui centered grid" style={{paddingTop: '50px'}}>
+        <div className="eight wide column">
+            <div className="ui list">
+                {data.allStrapiArticle.edges.map(document => (
+                    <div className="item" key={document.node.id}>
+                        <div className="header">{document.node.title}</div>
+                        <pre>{document.node.content}</pre>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
 )
 
 export default SecondPage
