@@ -1,13 +1,31 @@
-section {
-    width: 100%;
+.content {
     height: 100%;
 }
 
-section#cover > div {
+section {
+    width: 100%;
+    height: 70%;
+}
+
+section#cover {
+    background: url(background-02_edit.jpeg);
+    background-size: cover;
+    background-postion: center;
+}
+
+section#presentation {
+    background: #f6f6f6;
+}
+
+.test {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%)
+}
+
+.ui.divider {
+    padding: 0 200px 0 200px;
 }
 
 .scroll {

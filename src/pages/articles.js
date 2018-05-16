@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const SecondPage = ({ data }) => (
-  <div>
+  <div style={{paddingTop: '50px'}}>
     <ul>
       {data.allStrapiArticle.edges.map(document => (
         <li key={document.node.id}>
