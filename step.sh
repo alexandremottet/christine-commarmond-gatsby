@@ -34,4 +34,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 
 
-docker build -t strapi/strapi .
+docker build --no-cache -t aleanar/strapi .
+docker network create strapi-network
+docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 27017:27017 --net=strapi-network --name mongo -d mongo
+docker run --net=strapi-network -p 1337:1337 -d -t aleanar/strapi
