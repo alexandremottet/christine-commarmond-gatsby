@@ -16,10 +16,6 @@ export const query = graphql`
     strapiArticle(id: {eq: $id}) {
       title
       content
-      author {
-        id
-        username
-      }
     }
   }
 `

@@ -38,3 +38,5 @@ docker build --no-cache -t aleanar/strapi .
 docker network create strapi-network
 docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 27017:27017 --net=strapi-network --name mongo -d mongo
 docker run --net=strapi-network -p 1337:1337 -d -t aleanar/strapi
+docker run -e DATABASE_HOST=mongo -p 1337:1337 -d --net=strapi-network --name strapi -t aleanar/strapi
+docker run -e DATABASE_HOST=mongo -p 1337:1337 -v strapi-app:/usr/src/api/strapi-app -d --net=strapi-network -t test/test

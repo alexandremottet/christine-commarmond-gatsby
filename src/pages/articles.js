@@ -28,6 +28,10 @@ export const pageQuery = graphql`
           id
           title
           content
+          author {
+              id
+              username
+          }
         }
       }
     }
