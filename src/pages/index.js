@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import ReactMarkdown from 'react-markdown'
 
 import './index.css'
 
@@ -21,7 +22,9 @@ const IndexPage = ({ data }) => (
     <section id="presentation">
         <div className="ui horizontal divider" style={{margin:0, paddingTop: '50px'}}>
             <h2>Qui suis-je ?</h2>
-            <p>Je susi écraivaine publique. Je vous accompagne ...</p>
+            {data.allStrapiPresentation.edges.map(document => (
+                <div><ReactMarkdown source={document.node.content} /></div>
+            ))}
         </div>
         <p></p>
     </section>
@@ -29,3 +32,16 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
+
+export const presentationQuery = graphql`
+  query PresentationQuery {
+    allStrapiPresentation {
+      edges {
+        node {
+          id
+          content
+        }
+      }
+    }
+  }
+`
