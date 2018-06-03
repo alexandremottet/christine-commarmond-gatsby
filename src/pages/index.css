@@ -15,7 +15,7 @@ section#cover::after {
   background: url(background.jpeg);
   background-size: cover;
   background-postion: center;
-  opacity: 0.6;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;

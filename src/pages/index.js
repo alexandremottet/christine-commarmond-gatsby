@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => (
     <section id="cover">
         <div className="ui basic segment center aligned" style={{position:'relative', height: '100%'}}>
             <div className="test" style={{postion:'relative'}}>
-                <h1>christine commarmond</h1>
+                <h1>Christine Commarmond</h1>
                 <h3><i>lettre, biographie, mémoire</i></h3>
                 <h5>écrivaine publique</h5>
                 <p>Clermont-Ferrand, Auvergne, France</p>
@@ -22,8 +22,8 @@ const IndexPage = ({ data }) => (
         </div>
     </section>
     <section id="presentation">
-        <div className="ui grid" style={{margin:0, paddingTop: '50px'}}>
-            <div className="sixteen wide column">
+        <div className="ui centered grid" style={{margin:0, paddingTop: '50px'}}>
+            <div className="ten wide column">
             <h2>Qui suis-je ?</h2>
             {data.allStrapiPresentation.edges.map(document => (
                 <div><ReactMarkdown source={document.node.content} /></div>
@@ -33,21 +33,46 @@ const IndexPage = ({ data }) => (
         <p></p>
     </section>
     <section id="tarif">
-        <div className="ui grid" style={{margin:0, paddingTop: '50px'}}>
-            <div className="sixteen wide column">
-              <h2>Tarif</h2>
+        <div className="ui centered grid" style={{margin:0, paddingTop: '50px'}}>
+            <div className="ten wide column">
+              <h2>Prestations</h2>
               <h5>Chaque projet est personnel et différent, les tarifs indiqués ci-dessous ne sont que indicatif</h5>
-              <div class="ui items">
-                <div class="item">
-                  <div class="content">
-                    <a class="header">Cute Dog</a>
-                    <div class="description">
-                      <p></p>
-                      <p></p>
-                    </div>
+
+              <div className="ui basic segment">
+                <div className="ui left floated tiny statistic">
+                  <div className="value">
+                    Récit de vie, biographie
                   </div>
                 </div>
+                <p>
+                  Deux heures d’entretien gratuit pour la première consultation.
+                  Ensuite forfait entretien (2h) + écriture (10 heures de travail) :
+                  400 € ( ce tarif inclut les enregistrements, la saisie du document,
+                  les corrections et la livraison sur papier, clé USB, ou par e-mail.
+                </p>
+                <div className="ui left floated tiny statistic">
+                  <div className="value">
+                    Suivi administratif
+                  </div>
+                </div>
+                <p>
+• Aide à la constitution de dossiers administratifs : 30 € /heure
+• Rédaction de courriers administratifs : 30 € la page
+• Tri et classement de papier : 20 € / heure
+• Rédaction de courriers personnels : 20 €/heure
+                </p>
+                <div className="ui left floated mini statistic">
+                  <div className="value">
+                    Autres
+                  </div>
+                </div>
+                <p>
+                • Lettre de motivation : 30 € la page
+                • CV : 25 € la page
+                • Forfait (lettre de motivation+ CV) : 40 € la page
+                </p>
               </div>
+
             </div>
         </div>
         <p></p>
