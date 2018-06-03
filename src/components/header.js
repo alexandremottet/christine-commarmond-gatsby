@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import './header.css'
 
 const Header = ({ siteTitle }) => (
-  <header className="ui menu">
+  <header className="ui fixed menu">
     <Link className="item" to="/">
       Accueil
     </Link>
