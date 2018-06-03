@@ -1,8 +1,19 @@
 .list .header {
+  font-family: chancur !important;
+  text-align: center;
     font-size: 3rem;
     margin-bottom: 20px !important;
 }
 
 .list .item {
     margin-bottom: 20px;
+}
+
+.list .item hr {
+    margin-top: 40px;
+}
+
+hr {
+  width: 200px;
+  margin: 0 auto 50px auto;
 }

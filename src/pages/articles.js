@@ -6,12 +6,13 @@ import './articles.css'
 
 const SecondPage = ({ data }) => (
     <div className="ui centered grid" style={{paddingTop: '50px'}}>
-        <div className="eight wide column">
+        <div className="twelve wide column">
             <div className="ui list">
                 {data.allStrapiArticle.edges.reverse().map(document => (
                     <div className="item" key={document.node.id}>
                         <div className="header">{document.node.title}</div>
-                        <div><ReactMarkdown source={document.node.content} /></div>
+                        <div style={{'text-align': 'center'}}>le {new Date(document.node.createdAt).toLocaleDateString()}</div>
+                        <div style={{'margin-top': '20px'}}><ReactMarkdown source={document.node.content} /></div>
                         <hr />
                     </div>
                 ))}
@@ -30,6 +31,7 @@ export const pageQuery = graphql`
           id
           title
           content
+          createdAt
           author {
               id
               username
