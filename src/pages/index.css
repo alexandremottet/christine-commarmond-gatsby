@@ -8,9 +8,20 @@ section {
 
 section#cover {
     height: 70%;
-    background: url(background-02_edit.jpeg);
-    background-size: cover;
-    background-postion: center;
+}
+
+section#cover::after {
+  content: "";
+  background: url(background.jpeg);
+  background-size: cover;
+  background-postion: center;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 section#presentation {
