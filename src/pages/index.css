@@ -2,6 +2,11 @@
     height: 100%;
 }
 
+h1 {
+  font-family: chancur !important;
+  font-size: 2.5rem !important;
+}
+
 section {
     width: 100%;
 }
@@ -68,4 +73,9 @@ section#presentation {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+@font-face {
+    font-family: chancur;
+    src: url(chancur.ttf);
 }

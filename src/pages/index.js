@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
     <section id="presentation">
         <div className="ui centered grid" style={{margin:0, paddingTop: '50px'}}>
             <div className="ten wide column">
-            <h2>Qui suis-je ?</h2>
+            <h1>Qui suis-je ?</h1>
             {data.allStrapiPresentation.edges.map(document => (
                 <div><ReactMarkdown source={document.node.content} /></div>
             ))}
@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
     <section id="tarif">
         <div className="ui centered grid" style={{margin:0, paddingTop: '50px'}}>
             <div className="ten wide column">
-              <h2>Prestations</h2>
+              <h1>Prestations</h1>
               <h5>Chaque projet est personnel et différent, les tarifs indiqués ci-dessous ne sont que indicatif</h5>
 
               <div className="ui basic segment">
