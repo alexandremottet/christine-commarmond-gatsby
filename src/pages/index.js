@@ -13,18 +13,46 @@ const IndexPage = ({ data }) => (
                 <h3><i>lettre, biographie, mémoire</i></h3>
                 <h5>écrivaine publique</h5>
                 <p>Clermont-Ferrand, Auvergne, France</p>
-                <div style={{position: 'relative'}}>
-                    <span className="scroll"></span>
-                </div>
+                <a href={"#presentation"}>
+                  <div style={{position: 'relative'}}>
+                      <span className="scroll"></span>
+                  </div>
+                </a>
             </div>
         </div>
     </section>
     <section id="presentation">
-        <div className="ui horizontal divider" style={{margin:0, paddingTop: '50px'}}>
+        <div className="ui grid" style={{margin:0, paddingTop: '50px'}}>
+            <div className="sixteen wide column">
             <h2>Qui suis-je ?</h2>
             {data.allStrapiPresentation.edges.map(document => (
                 <div><ReactMarkdown source={document.node.content} /></div>
             ))}
+            </div>
+        </div>
+        <p></p>
+    </section>
+    <section id="tarif">
+        <div className="ui grid" style={{margin:0, paddingTop: '50px'}}>
+            <div className="sixteen wide column">
+              <h2>Tarif</h2>
+              <h5>Chaque projet est personnel et différent, les tarifs indiqués ci-dessous ne sont que indicatif</h5>
+              <div class="ui items">
+                <div class="item">
+                  <div class="content">
+                    <a class="header">Cute Dog</a>
+                    <div class="description">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <div class="extra">
+                      <i class="green check icon"></i>
+                      121 Votes
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <p></p>
     </section>

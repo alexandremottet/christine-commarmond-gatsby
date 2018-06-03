@@ -4,10 +4,10 @@
 
 section {
     width: 100%;
-    height: 70%;
 }
 
 section#cover {
+    height: 70%;
     background: url(background-02_edit.jpeg);
     background-size: cover;
     background-postion: center;
