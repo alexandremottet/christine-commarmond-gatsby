@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
             </div>
         </div>
     </section>
-    <section className="ui fixed" style={{background: '#d688a4e6', color: 'white', padding: '20px 10px'}}>
+    <section className="ui fixed" style={{background: '#004275e6', color: 'white', padding: '20px 10px'}}>
       <div className="ui centered grid">
           <div className="twelve wide column">
             <p>Je serai présente</p>
