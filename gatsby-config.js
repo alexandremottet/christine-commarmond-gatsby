@@ -11,6 +11,8 @@ module.exports = {
         contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
           `presentation`,
           `article`,
+          `news`,
+          `activity`,
           `user`
         ]
       },
