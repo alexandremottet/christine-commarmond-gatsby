@@ -84,7 +84,7 @@ class ContactPage extends React.Component {
             <div className="badge-container">
               <Reaptcha
                 ref={e => (this.captcha = e)}
-                sitekey="6LfjE24UAAAAAMi2PTcpt6oztXeWVUQsEIu7A1VS"
+                sitekey="6LdME24UAAAAAABesig8BFJG_dRpOFVjBDpFUReP"
                 onVerify={this.onVerify}
                 size="invisible"
                 badge="inline"
@@ -96,5 +96,5 @@ class ContactPage extends React.Component {
     )
   }
 }
-
+// test : 6LfjE24UAAAAAMi2PTcpt6oztXeWVUQsEIu7A1VS
 export default ContactPage
