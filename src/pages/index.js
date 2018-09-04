@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Presentation from './presentation.js'
 import ActivitiesPage from './activities.js'
 import AgendaPage from './agenda.js'
+import ContactPage from './contact.js'
 import './index.css'
 
 class IndexPage extends React.Component {
@@ -38,6 +39,7 @@ class IndexPage extends React.Component {
         <AgendaPage content={this.state.news}></AgendaPage>
         <Presentation content={this.state.presentation.node.content}></Presentation>
         <ActivitiesPage content={this.state.activities}></ActivitiesPage>
+        <ContactPage></ContactPage>
       </div>
     )
   }

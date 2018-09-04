@@ -9,7 +9,10 @@ const Header = ({ siteTitle }) => (
       Accueil
     </Link>
     <Link className="item" to="/articles/">
-      Blog
+      Articles
+    </Link>
+    <Link className="item" to="#contact">
+      Contact
     </Link>
   </header>
 )
