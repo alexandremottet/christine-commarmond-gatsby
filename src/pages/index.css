@@ -12,25 +12,54 @@ section {
 }
 
 section#cover {
-    height: 70%;
+  height: 70%;
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+	section#cover {
+		max-height: auto;
+		background-image: url("banner_static.jpg");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 section#cover::after {
   content: "";
-  background: url(background.jpeg);
+  position: absolute;
+  z-index: -1;
+  background: #fff;
   background-size: cover;
-  background-postion: center;
-  opacity: 0.5;
+  opacity: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+section#cover video {
   position: absolute;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 section#presentation {
-    background: #f6f6f6;
+    background: #d8d8d8;
 }
 
 .test {

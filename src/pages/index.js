@@ -22,6 +22,9 @@ class IndexPage extends React.Component {
     return (
       <div className="content">
         <section id="cover">
+            <video loop muted autoPlay playsInline poster="https://media.giphy.com/media/PO6qsyajlXE7xf7xAF/giphy.gif">
+              <source src="https://firebasestorage.googleapis.com/v0/b/christine-commarmond.appspot.com/o/banner_sd.mp4?alt=media&token=458e20f2-eb55-44ef-a268-39ecc74357ab" type="video/mp4" />
+            </video>
             <div className="ui basic segment center aligned" style={{position:'relative', height: '100%'}}>
                 <div className="test" style={{postion:'relative'}}>
                     <h1>{this.state.presentation.node.identity}</h1>
