@@ -28,11 +28,15 @@ sudo chmod +x /usr/local/bin/docker-compose
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 
-docker build --no-cache -t aleanar/strapi .
+docker build --no-cache -t aleanar/christine-commarmond-strapi .
 docker network create strapi-network
 docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 127.0.0.1:27017:27017 --net=strapi-network --name mongo -d mongo
-docker run -e DATABASE_HOST=mongo --net=strapi-network -p 1337:1337 -t --name strapi -d aleanar/strapi
+docker run -e DATABASE_HOST=mongo -p 1337:1337 --net=strapi-network -t --name strapi -d aleanar/strapi
+docker run -e DATABASE_HOST=mongo --net=strapi-network -p 1337:1337 -t --name strapi -d aleanar/christine-commarmond-strapi
 docker run -e DATABASE_HOST=mongo -p 1337:1337 -v strapi-app:/usr/src/api/strapi-app -d --net=strapi-network -t test/test
+
+docker build -t aleanar/christine-commarmond-gatsby .
+docker run --rm -p 80:80 -d aleanar/christine-commarmond-gatsby
 
 TIPS
 docker run -e DATABASE_HOST=mongo -p 1337:1337 -d --net=strapi-network --name strapi -t aleanar/strapi
