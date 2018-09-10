@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink}  from 'gatsby-plugin-google-analytics'
 
 import Presentation from './presentation.js'
 import ActivitiesPage from './activities.js'
@@ -31,6 +32,10 @@ class IndexPage extends React.Component {
                     <h3>{this.state.presentation.node.activity}</h3>
                     <h5>{this.state.presentation.node.work}</h5>
                     <p>{this.state.presentation.node.location}</p>
+                    <div className="links">
+                      <OutboundLink href="https://www.facebook.com/commarmondch"><i className="fab fa-facebook-square"></i></OutboundLink>
+                      <OutboundLink href="https://www.instagram.com/christinecommarmond/"><i className="fab fa-instagram"></i></OutboundLink>
+                    </div>
                     <a href={"#presentation"}>
                       <div style={{position: 'relative'}}>
                         <span className="scroll"></span>

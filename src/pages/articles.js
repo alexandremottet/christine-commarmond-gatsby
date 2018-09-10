@@ -11,8 +11,8 @@ const SecondPage = ({ data }) => (
                 {data.allStrapiArticle.edges.reverse().map(document => (
                     <div className="item" key={document.node.id}>
                         <div className="header">{document.node.title}</div>
-                        <div style={{'text-align': 'center'}}>le {new Date(document.node.createdAt).toLocaleDateString()}</div>
-                        <div style={{'margin-top': '20px'}}><ReactMarkdown source={document.node.content} /></div>
+                        <div style={{'textAlign': 'center'}}>le {new Date(document.node.createdAt).toLocaleDateString()}</div>
+                        <div style={{'marginTop': '20px'}}><ReactMarkdown source={document.node.content} /></div>
                         <hr />
                     </div>
                 ))}

@@ -14,7 +14,8 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css' }
+        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css' },
+        { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity: 'sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin: 'anonymous' }
       ]}
       script={[
         { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
