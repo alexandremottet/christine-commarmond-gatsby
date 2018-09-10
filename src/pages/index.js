@@ -63,7 +63,6 @@ export const presentationQuery = graphql`
         node {
           id
           content
-          date
           startDate
           endDate
         }

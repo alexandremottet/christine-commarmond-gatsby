@@ -5,7 +5,7 @@ class AgendaPage extends React.Component {
 
   constructor(props) {
     super(props);
-    const news = this.props.content.sort((a,b) => new Date(a.node.date).getTime() - new Date(b.node.date).getTime()).reverse();
+    const news = this.props.content.sort((a,b) => new Date(a.node.createdAt).getTime() - new Date(b.node.createdAt).getTime()).reverse();
     this.state = {
       latest : news[0]
     };
