@@ -56,6 +56,8 @@ export const presentationQuery = graphql`
           id
           content
           date
+          startDate
+          endDate
         }
       }
     }

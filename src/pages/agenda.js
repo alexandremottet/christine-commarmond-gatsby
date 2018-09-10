@@ -12,16 +12,20 @@ class AgendaPage extends React.Component {
   }
 
   render() {
-    return (
-      <section className="ui fixed" style={{background: '#004275e6', color: 'white', padding: '20px 10px'}}>
-        <div className="ui centered grid">
-            <div className="twelve wide column">
-              <p>Je serai présente</p>
-              <ReactMarkdown source={this.state.latest.node.content} />
+    const displayLastNews = (new Date(this.state.latest.node.startDate) <= new Date()) && (new Date(this.state.latest.node.endDate) >= new Date());
+    if (displayLastNews) {
+      return (
+          <section className="ui fixed" style={{background: '#004275e6', color: 'white', padding: '20px 10px'}}>
+            <div className="ui centered grid">
+                <div className="twelve wide column">
+                    <ReactMarkdown source={this.state.latest.node.content} />
+                </div>
             </div>
-        </div>
-      </section>
-    )
+          </section>
+      )
+    }
+
+    return null;
   }
 
 }
