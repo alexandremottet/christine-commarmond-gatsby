@@ -28,12 +28,13 @@ class ActivitiesPage extends React.Component {
                     {activity.node.name}
                   </div>
                 </div>
-                <div style={{'fontSize': '1.2rem'}} >
+                <div>
                   <ReactMarkdown source={activity.node.description} />
                 </div>
-                <p style={{'fontSize': '1rem', 'fontWeight': 'bold'}}>
+                <p style={{'marginTop': '20px', 'fontStyle': 'italic'}}>
                   {activity.node.content}
                 </p>
+                <hr />
 
               </div>
             </div>
