@@ -5,14 +5,16 @@ class AgendaPage extends React.Component {
 
   constructor(props) {
     super(props);
-    const news = this.props.content.sort((a,b) => new Date(a.node.createdAt).getTime() - new Date(b.node.createdAt).getTime()).reverse();
+    const content = this.props.content || [];
+    const news = content.sort((a,b) => new Date(a.node.createdAt).getTime() - new Date(b.node.createdAt).getTime()).reverse();
     this.state = {
-      latest : news[0]
+      latest : news[0] || {}
     };
   }
 
   render() {
-    const displayLastNews = (new Date(this.state.latest.node.startDate) <= new Date()) && (new Date(this.state.latest.node.endDate) >= new Date());
+    const latest = this.state.latest.node || {};
+    const displayLastNews = (new Date(latest.startDate) <= new Date()) && (new Date(latest.endDate) >= new Date());
     if (displayLastNews) {
       return (
           <section className="ui fixed" style={{background: '#004275e6', color: 'white', padding: '20px 10px'}}>

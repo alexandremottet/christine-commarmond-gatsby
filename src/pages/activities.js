@@ -6,7 +6,7 @@ class ActivitiesPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activities : this.props.content
+      activities : this.props.content || []
     };
   }
 
