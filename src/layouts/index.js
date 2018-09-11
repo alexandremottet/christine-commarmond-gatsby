@@ -10,8 +10,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: `Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne` },
+        { name: 'keywords', content: `écrivain, écrivaine, publique, christine, commarmond, auvergne, puy-de-dome` },
       ]}
       link={[
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css' },

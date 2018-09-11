@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Christine Commarmond - Ecrivaine Publique`,
+    siteUrl: `https://christinecommarmond.fr`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
