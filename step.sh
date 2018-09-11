@@ -28,6 +28,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 
+08 - install letsencrypts
+- https://backports.debian.org/Instructions/
+- https://letsencrypt.org/getting-started/
+- https://certbot.eff.org/lets-encrypt/debianstretch-nginx
+- https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-16-04
+  - sudo certbot certonly --standalone --preferred-challenges http -d christinecommarmond.fr
+
 docker build --no-cache -t aleanar/christine-commarmond-strapi .
 docker network create strapi-network
 docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 127.0.0.1:27017:27017 --net=strapi-network --name mongo -d mongo
