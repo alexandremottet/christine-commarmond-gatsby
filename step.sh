@@ -40,3 +40,4 @@ docker run --rm -p 80:80 -d aleanar/christine-commarmond-gatsby
 
 TIPS
 docker run -e DATABASE_HOST=mongo -p 1337:1337 -d --net=strapi-network --name strapi -t aleanar/strapi
+docker exec mongo-test bash -c 'mongorestore --drop /tmp/mongodump-2013-10-24/'
