@@ -35,6 +35,8 @@ class IndexPage extends React.Component {
                     <div className="links">
                       <OutboundLink href="https://www.facebook.com/commarmondch"><i className="fab fa-facebook-square"></i></OutboundLink>
                       <OutboundLink href="https://www.instagram.com/christinecommarmond/"><i className="fab fa-instagram"></i></OutboundLink>
+                      <OutboundLink href="https://twitter.com/chriscommarmond"><i className="fab fa-twitter"></i></OutboundLink>
+                      <OutboundLink href="https://fr.linkedin.com/in/christine-commarmond-25750b105"><i className="fab fa-linkedin"></i></OutboundLink>
                     </div>
                     <a href={"#presentation"}>
                       <div style={{position: 'relative'}}>
