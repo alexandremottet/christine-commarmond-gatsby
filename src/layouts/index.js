@@ -12,6 +12,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: `Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne` },
         { name: 'keywords', content: `écrivain, écrivaine, publique, christine, commarmond, auvergne, puy-de-dome` },
+        { name: 'robots', content: `index, follow`},
       ]}
       link={[
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css' },
