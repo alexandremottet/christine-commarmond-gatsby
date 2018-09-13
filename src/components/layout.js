@@ -28,16 +28,16 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
-          <meta property="title" content={data.site.siteMetadata.title} />
-          <meta property="description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
-          <meta property="keywords" content='écrivain, écrivaine, publique, public, christine, commarmond, auvergne, puy-de-dome, sainte-florine' />
-          <meta property="robots" content='index, follow' />
-          <meta property="title" content={data.site.siteMetadata.title} />
-          <meta property="author" content='Christine Commarmond' />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
-          <meta property="og:type" content='website' />
-          <meta property="google-site-verification" content="hgFZGH8J_ZX_QbqP--iAd7ICTGh86z7iZco7nEB7HPs" />
+          <meta name="title" content={data.site.siteMetadata.title} />
+          <meta name="description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
+          <meta name="keywords" content='écrivain, écrivaine, publique, public, christine, commarmond, auvergne, puy-de-dome, sainte-florine' />
+          <meta name="robots" content='index, follow' />
+          <meta name="title" content={data.site.siteMetadata.title} />
+          <meta name="author" content='Christine Commarmond' />
+          <meta name="og:title" content={data.site.siteMetadata.title} />
+          <meta name="og:description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
+          <meta name="og:type" content='website' />
+          <meta name="google-site-verification" content="hgFZGH8J_ZX_QbqP--iAd7ICTGh86z7iZco7nEB7HPs" />
           <meta name="msvalidate.01" content="CDEDB43A29F299BBA9EB95B4DD0EAD8E" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
