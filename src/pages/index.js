@@ -15,7 +15,7 @@ class IndexPage extends React.Component {
     this.state = {
       presentation: this.props.data.allStrapiPresentation.edges[0],
       news: this.props.data.allStrapiNews.edges,
-      activities: this.props.data.allStrapiActivity.edges
+      activities: this.props.data
     };
   }
 
@@ -48,7 +48,7 @@ class IndexPage extends React.Component {
         </section>
         <AgendaPage content={this.state.news}></AgendaPage>
         <Presentation content={this.state.presentation.node.content}></Presentation>
-        <ActivitiesPage content={this.state.activities}></ActivitiesPage>
+        <ActivitiesPage data={this.state.activities}></ActivitiesPage>
         <ContactPage></ContactPage>
       </div>
     )

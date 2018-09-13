@@ -5,8 +5,9 @@ class ActivitiesPage extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log(this.props);
     this.state = {
-      activities : this.props.content || []
+      activities : props.data.allStrapiActivity.edges || []
     };
   }
 
@@ -50,3 +51,18 @@ class ActivitiesPage extends React.Component {
 }
 
 export default ActivitiesPage
+
+export const activitesQuery = graphql`
+  query ActivitesQuery {
+    allStrapiActivity {
+      edges {
+        node {
+          id
+          name
+          description
+          content
+        }
+      }
+    }
+  }
+`;

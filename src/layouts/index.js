@@ -20,7 +20,7 @@ const Layout = ({ children, data }) => (
     >
       <meta property="title" content={data.site.siteMetadata.title} />
       <meta property="description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
-      <meta property="keywords" content='écrivain, écrivaine, publique, christine, commarmond, auvergne, puy-de-dome' />
+      <meta property="keywords" content='écrivain, écrivaine, publique, public, christine, commarmond, auvergne, puy-de-dome, sainte-florine' />
       <meta property="robots" content='index, follow' />
       <meta property="title" content={data.site.siteMetadata.title} />
       <meta property="author" content='Christine Commarmond' />
