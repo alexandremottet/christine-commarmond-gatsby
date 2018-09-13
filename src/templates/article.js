@@ -1,11 +1,19 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
+import ReactMarkdown from 'react-markdown'
+import { Container } from "semantic-ui-react";
+
+import Layout from '../components/layout'
 
 const ArticleTemplate = ({ data }) => (
-  <div>
-    <h1>{data.strapiArticle.title}</h1>
-    <p>{data.strapiArticle.content}</p>
-  </div>
+  <Layout>
+    <Container id="container">
+      <div>
+        <h1>{data.strapiArticle.title}</h1>
+        <p><ReactMarkdown source={data.strapiArticle.content} /></p>
+      </div>
+    </Container>
+  </Layout>
 )
 
 export default ArticleTemplate

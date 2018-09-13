@@ -1,11 +1,9 @@
-header {
-}
-
-.ui.menu {
+header.ui.menu {
   border-radius: 0 !important;
   border: 0 !important;
   background: rgba(0, 0, 0, 0.5) !important;
   height: 50px;
+  margin: 0;
 }
 
 .ui.menu > .item {

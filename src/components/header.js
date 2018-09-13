@@ -1,20 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
+import { Menu } from "semantic-ui-react";
 
 import './header.css'
 
 const Header = ({ siteTitle }) => (
-  <header className="ui fixed menu">
-    <Link className="item" to="/">
-      Accueil
-    </Link>
-    <Link className="item" to="/articles/">
-      Articles
-    </Link>
-    <Link className="item" to="#contact">
-      Contact
-    </Link>
-  </header>
+      <Menu as="header" fixed="top">
+        <Menu.Item as={Link} to='/'>Accueil</Menu.Item>
+        <Menu.Item as={Link} to='/articles'>Articles</Menu.Item>
+        <Menu.Item as={Link} to='#contact'>Contact</Menu.Item>
+      </Menu>
 )
 
 export default Header
