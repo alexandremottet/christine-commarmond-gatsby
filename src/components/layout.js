@@ -37,6 +37,7 @@ const Layout = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:description" content='Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne' />
           <meta property="og:type" content='website' />
+          <meta property="google-site-verification" content="hgFZGH8J_ZX_QbqP--iAd7ICTGh86z7iZco7nEB7HPs" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         {children}
