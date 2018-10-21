@@ -2,7 +2,7 @@
 
 gatsby build >/dev/null 2>&1
 
-docker build --no-cache -t aleanar/christine-commarmond-gatsby .
+docker build --rm --no-cache -t aleanar/christine-commarmond-gatsby .
 
 docker stop christine-commarmond-gatsby
 docker rm christine-commarmond-gatsby

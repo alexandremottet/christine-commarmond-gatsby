@@ -37,6 +37,8 @@ sudo apt install -y nodejs
 
 docker build --no-cache -t aleanar/christine-commarmond-strapi .
 docker network create strapi-network
+docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 127.0.0.1:27017:27017 --net=strapi-network -v /opt/data:/data/db --name mongo -d mongo
+docker run -v /opt/data:/data/db mongo
 docker run -e MONGO_INITDB_DATABASE=strapi -v `pwd` -p 127.0.0.1:27017:27017 --net=strapi-network --name mongo -d mongo
 docker run -e DATABASE_HOST=mongo -p 1337:1337 --net=strapi-network -t --name strapi -d aleanar/strapi
 docker run -e DATABASE_HOST=mongo --net=strapi-network -p 1337:1337 -t --name strapi -d aleanar/christine-commarmond-strapi
@@ -48,3 +50,4 @@ docker run --rm -p 80:80 -d aleanar/christine-commarmond-gatsby
 TIPS
 docker run -e DATABASE_HOST=mongo -p 1337:1337 -d --net=strapi-network --name strapi -t aleanar/strapi
 docker exec mongo-test bash -c 'mongorestore --drop /tmp/mongodump-2013-10-24/'
+docker rmi $(docker images -f "dangling=true" -q)
