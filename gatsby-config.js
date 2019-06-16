@@ -2,7 +2,8 @@ let API_URL = process.env.API_URL || "http://localhost:1337"
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Christine Commarmond - Ecrivaine Publique`,
+    siteUrl: "https://christinecommarmond.fr",
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
