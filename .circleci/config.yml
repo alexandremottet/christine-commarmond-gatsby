@@ -38,11 +38,7 @@ workflows:
               only:
                 - master
     jobs:
-      - release:
-          filters:
-            branches:
-              only:
-                - master
+      - release
 jobs:
   release:
     executor: node-executor
