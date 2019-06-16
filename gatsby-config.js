@@ -1,3 +1,5 @@
+let API_URL = process.env.API_URL || "http://localhost:1337"
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -39,7 +41,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: API_URL,
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           `presentation`,
