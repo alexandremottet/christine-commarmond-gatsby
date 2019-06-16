@@ -1,7 +1,9 @@
 body {
 }
 
-body > div, body > div > div, #content {
+body > div,
+body > div > div,
+#content {
   height: 100%;
 }
 
