@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `Christine Commarmond - Ecrivaine Publique`,
     siteUrl: "https://christinecommarmond.fr",
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Site personnel de Christine Commarmond écrivaine Publique dans la région Auvergne`,
+    author: `christine commarmond`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
